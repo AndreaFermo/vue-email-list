@@ -8,10 +8,10 @@ createApp({
     }
   },
   mounted() {
-    for(i=0; i < this.n; i++  ) {
+    for(i=0; i < this.n; i++) {
         axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
         .then((response) => {
-            this.emails.push(response.data.response);
+          this.emails.push(response.data.response);
         }
     )
     }

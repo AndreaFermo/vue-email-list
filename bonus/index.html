@@ -12,7 +12,7 @@
     <main>
         <div id="app">
         <ul>
-            <li v-for="email in emails" v-show="n == emails.length">
+            <li v-for="email in emails" v-if="n == emails.length">
                 {{email}}
             </li>
         </ul>
